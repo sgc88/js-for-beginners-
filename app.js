@@ -105,23 +105,38 @@ for(i = 0; i < links.length; i++){
 
 // LESSON 20: FUNCTIONS
 
-function myword(){
+// LESSON 21: LOCAL VS GLOBAL
+
+function myWord(){
     alert("What is your name?");
 }
 
 
-var yword = "hello" + myword;
+var yWord = "hello" + myWord; // GLOBAL VAR
 
-function getAverage(a,b,c, d, e, f){
-    var average = (a+b+c+d+e+f) / 2;
+//we can also declare local var into global var
+var average =0;
+
+function getAverage(a,b){
+    average = (a+b) / 2; // LOCAL VAR
     console.log(average);
     return average;s
 }
 
 getAverage(5,7);
 
-var myresult = getAverage(5,7,66,21,90,12);
-console.log("the average is " + myresult);
+var myResult = getAverage(5,7);
+console.log("the average is " + myResult);
+
+// example for global
+
+function logResult(){
+
+    console.log("the averageis " + myResult + " inside the function");
+};
+ logResult();
+
+
 
 
 
