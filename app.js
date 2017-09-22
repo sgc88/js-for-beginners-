@@ -152,6 +152,31 @@ console.log(Math.max(7,8,9,3)); // always picks biggest number
 console.log(Math.PI); // gives a number for PI
 
 
+//LESSON 23: NaN
+
+var c = "7";
+var d = 5;
+console.log(c*d); // js recognize "7" as a number
+
+var c = "apple";
+var d = 5;
+console.log(c*d);// js runs the code as NaN saying that check your code cus something is wrong
+
+
+if(!isNaN(c)){
+    console.log("that aint a number");
+
+
+}else{
+    console.log("this is " + (c*d));
+}
+// !isNaN : meaning not-not;
+
+
+
+
+
+
 
 
 
