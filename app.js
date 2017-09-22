@@ -137,6 +137,23 @@ function logResult(){
  logResult();
 
 
+//LESSON 22 : NUMBERS
+
+var a= 5;
+var b= 5;
+console.log(a+b);
+console.log(typeof (a+b));
+
+console.log(Math.round(7.5)); // round it up
+
+console.log(Math.floor(7.5)); // round it down no matter what
+console.log(Math.ceil(7.5)); // round it up no matter what
+console.log(Math.max(7,8,9,3)); // always picks biggest number
+console.log(Math.PI); // gives a number for PI
+
+
+
+
 
 
 
