@@ -112,6 +112,16 @@ function myword(){
 
 var yword = "hello" + myword;
 
+function getAverage(a,b,c, d, e, f){
+    var average = (a+b+c+d+e+f) / 2;
+    console.log(average);
+    return average;s
+}
+
+getAverage(5,7);
+
+var myresult = getAverage(5,7,66,21,90,12);
+console.log("the average is " + myresult);
 
 
 
