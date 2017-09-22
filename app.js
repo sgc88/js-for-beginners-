@@ -172,6 +172,40 @@ if(!isNaN(c)){
 }
 // !isNaN : meaning not-not;
 
+// LESSON 24: STRINGS
+
+
+var myString = "I am 'fun' a string";
+console.log(myString); // or
+var mString = 'I\'m a  ninja string' // we need to use  " \ " to prevent an error
+console.log(mString);
+// to see the length of the string;
+console.log(mString.length);
+// to convert it to uppercase;
+console.log(mString.toUpperCase());
+// to find a particuler phrase or letter;
+console.log(mString.indexOf("a"));
+// if the phrase does not exist; gives -1
+console.log(mString.indexOf("ninja"));
+
+// we can define it in a function;
+
+if(mString.indexOf("ninja") === -1){
+    console.log("the word you are lookin gfor is not in the string");
+}else{
+
+    console.log("the word you are looking for start at the position " + mString.indexOf("ninja"));
+}
+// we can also use comparing method true- false;
+
+var string1 = "abd";
+var string2 = "ABD";
+console.log(string1 === string2); // that will return false but we can work around like;
+console.log(string1.toLowerCase() === string2.toLowerCase());
+// also alphabetical seqence is important;
+console.log(string1 < string2);
+
+
 
 
 
